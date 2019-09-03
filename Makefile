@@ -17,7 +17,7 @@ push pull:
 	docker $@ $(IMG)
 
 bash:
-	$(dr) -p 8888:80 $(IMG) bash
+	$(dr) $(IMG) bash
 run:
 	docker run --gpus all $(IMG)
 
